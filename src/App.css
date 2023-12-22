@@ -36,3 +36,51 @@
     transform: rotate(360deg);
   }
 }
+
+.contact-form-wrapper {
+  padding-left: 35%;
+  padding-right: 35%;
+  padding-top: 2.5%;
+}
+
+.contact-name-wrapper {
+  padding: 2%;
+}
+
+.contact-message-wrapper {
+  padding: 2%;
+}
+
+.contact-message {
+  width: 100% !important;
+  height: 200px !important;
+}
+
+.contact-submit-button-wrapper {
+  padding-top: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thanks-button-wrapper {
+  padding-top: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thanks-button {
+  width: 20%;
+  height: 100px;
+  font-size: 200% !important;
+}
+
+.project-template-card-wrapper {
+  padding-top: 35%;
+}
+
+.project-template-detail-wrapper {
+  padding-top: 10%;
+  padding: 5%;
+}
