@@ -28,7 +28,7 @@ class AI extends Component {
                     <Card.Text>
                         Temp
                     </Card.Text>
-                    <Button variant="primary" onClick={() => this.props.switchPageTo("home")}>Go</Button>
+                    <Button variant="primary" onClick={() => this.props.switchPageTo("project_template")}>Go</Button>
                 </Card.Body>
             </Card>
             </Col>
@@ -40,7 +40,7 @@ class AI extends Component {
                     <Card.Text>
                         Temp
                     </Card.Text>
-                    <Button variant="primary" onClick={() => this.props.switchPageTo("home")}>Go</Button>
+                    <Button variant="primary" onClick={() => this.props.switchPageTo("project_template")}>Go</Button>
                 </Card.Body>
             </Card>
             </Col>

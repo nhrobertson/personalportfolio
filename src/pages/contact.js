@@ -7,6 +7,9 @@ import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import placeholder from '../images/placeholder-2.png'
+import { db } from '../firebase.js'
+import { addDoc, collection } from 'firebase/firestore'
+import firebase from 'firebase/app'
 
 class Contact extends Component {
     constructor(props) {
@@ -32,6 +35,36 @@ class Contact extends Component {
 
     handleSubmit() {
         console.log("Submitted!")
+    }
+
+    handleSubmit = async (e) => {
+        e.preventDefault();
+        const eventsCollectionRef = collection(db, "messages")
+        if (this.state.name == "") {
+            alert("Please enter your name.")
+            return
+        }
+        if (this.state.email == "") {
+            alert("Please enter your email.")
+            return
+        }
+        if (this.state.message == "") {
+            alert("Please enter a message.")
+            return
+        }
+
+        try {
+            await addDoc(eventsCollectionRef, {
+                name: this.state.name,
+                email: this.state.email,
+                message: this.state.message
+            })
+        } 
+        catch (error) {
+            console.error(error.message);
+        }
+
+        this.props.switchPageTo("thanks");
     }
 
     render() {
@@ -73,7 +106,7 @@ class Contact extends Component {
                     onChange={(e) => this.handleMessageChange(e)}/>
                 </div>
                 <div className="contact-submit-button-wrapper">
-                <Button type="submit" variant="primary" onClick={() => this.props.switchPageTo("thanks")}>Send</Button>
+                <Button type="submit" variant="primary">Send</Button>
                 </div>
             </Form>
             </div>

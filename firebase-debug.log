@@ -1,0 +1,141 @@
+[debug] [2023-12-23T01:45:28.565Z] ----------------------------------------------------------------------
+[debug] [2023-12-23T01:45:28.569Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\nhrob\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-12-23T01:45:28.570Z] CLI Version:   13.0.2
+[debug] [2023-12-23T01:45:28.570Z] Platform:      win32
+[debug] [2023-12-23T01:45:28.571Z] Node Version:  v20.2.0
+[debug] [2023-12-23T01:45:28.571Z] Time:          Fri Dec 22 2023 20:45:28 GMT-0500 (Eastern Standard Time)
+[debug] [2023-12-23T01:45:28.571Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-12-23T01:45:28.580Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-12-23T01:45:28.580Z] > authorizing via signed-in user (nhrobertson3@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\nhrob\Desktop\Portfolio Website\personalportfolio
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-12-23T01:46:50.315Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-12-23T01:46:50.773Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-12-23T01:46:50.773Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project personalportfolio-8904c (personalportfolio) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2023-12-23T01:46:52.687Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/personalportfolio-8904c/services/firebasedatabase.googleapis.com [none]
+[debug] [2023-12-23T01:46:52.687Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/personalportfolio-8904c/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/personalportfolio-8904c
+[debug] [2023-12-23T01:46:53.154Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/personalportfolio-8904c/services/firebasedatabase.googleapis.com 200
+[debug] [2023-12-23T01:46:53.154Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/personalportfolio-8904c/services/firebasedatabase.googleapis.com [omitted]
+[warn] !  database: missing required API firebasedatabase.googleapis.com. Enabling now... 
+[debug] [2023-12-23T01:46:53.155Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/personalportfolio-8904c/services/firebasedatabase.googleapis.com:enable [none]
+[debug] [2023-12-23T01:46:53.155Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/personalportfolio-8904c/services/firebasedatabase.googleapis.com:enable x-goog-quota-user=projects/personalportfolio-8904c
+[debug] [2023-12-23T01:46:54.269Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/personalportfolio-8904c/services/firebasedatabase.googleapis.com:enable 200
+[debug] [2023-12-23T01:46:54.269Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/personalportfolio-8904c/services/firebasedatabase.googleapis.com:enable [omitted]
+[debug] [2023-12-23T01:47:04.275Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/personalportfolio-8904c/services/firebasedatabase.googleapis.com [none]
+[debug] [2023-12-23T01:47:04.275Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/personalportfolio-8904c/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/personalportfolio-8904c
+[debug] [2023-12-23T01:47:04.714Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/personalportfolio-8904c/services/firebasedatabase.googleapis.com 200
+[debug] [2023-12-23T01:47:04.714Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/personalportfolio-8904c/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2023-12-23T01:47:04.717Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/personalportfolio-8904c [none]
+[debug] [2023-12-23T01:47:05.050Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/personalportfolio-8904c 200
+[debug] [2023-12-23T01:47:05.051Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/personalportfolio-8904c {"projectId":"personalportfolio-8904c","projectNumber":"1027655698113","displayName":"personalportfolio","name":"projects/personalportfolio-8904c","resources":{"hostingSite":"personalportfolio-8904c"},"state":"ACTIVE","etag":"1_f37f3dd1-c79a-46da-b8d8-5c534ee6acd3"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[info] +  Default rules have been written to database.rules.json. 
+[info] Future modifications to database.rules.json will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Firestore Setup
+[debug] [2023-12-23T01:47:13.121Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/personalportfolio-8904c/services/firestore.googleapis.com [none]
+[debug] [2023-12-23T01:47:13.121Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/personalportfolio-8904c/services/firestore.googleapis.com x-goog-quota-user=projects/personalportfolio-8904c
+[debug] [2023-12-23T01:47:13.574Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/personalportfolio-8904c/services/firestore.googleapis.com 200
+[debug] [2023-12-23T01:47:13.574Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/personalportfolio-8904c/services/firestore.googleapis.com [omitted]
+[debug] [2023-12-23T01:47:13.574Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/personalportfolio-8904c/databases/(default) [none]
+[debug] [2023-12-23T01:47:13.943Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/personalportfolio-8904c/databases/(default) 200
+[debug] [2023-12-23T01:47:13.944Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/personalportfolio-8904c/databases/(default) {"name":"projects/personalportfolio-8904c/databases/(default)","uid":"265583c0-c7b3-4333-bccd-1a60b561a221","createTime":"2023-12-23T01:24:54.630173Z","updateTime":"2023-12-23T01:24:54.630173Z","locationId":"nam5","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2023-12-23T01:24:54.630173Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"s","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","etag":"IK3qqJm4pIMDMOfrhquzpIMD"}
+[debug] [2023-12-23T01:47:13.944Z] database_type: FIRESTORE_NATIVE
+[debug] [2023-12-23T01:47:13.944Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-12-23T01:47:13.944Z] > authorizing via signed-in user (nhrobertson3@gmail.com)
+[debug] [2023-12-23T01:47:13.944Z] [iam] checking project personalportfolio-8904c for permissions ["firebase.projects.get"]
+[debug] [2023-12-23T01:47:13.944Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/personalportfolio-8904c:testIamPermissions [none]
+[debug] [2023-12-23T01:47:13.944Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/personalportfolio-8904c:testIamPermissions x-goog-quota-user=projects/personalportfolio-8904c
+[debug] [2023-12-23T01:47:13.945Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/personalportfolio-8904c:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-12-23T01:47:14.185Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/personalportfolio-8904c:testIamPermissions 200
+[debug] [2023-12-23T01:47:14.186Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/personalportfolio-8904c:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2023-12-23T01:47:17.148Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/personalportfolio-8904c/releases pageSize=10&pageToken=
+[debug] [2023-12-23T01:47:17.490Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/personalportfolio-8904c/releases 200
+[debug] [2023-12-23T01:47:17.490Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/personalportfolio-8904c/releases {"releases":[{"name":"projects/personalportfolio-8904c/releases/cloud.firestore","rulesetName":"projects/personalportfolio-8904c/rulesets/b8f6727b-a3f9-458c-a945-2000f1cf42c1","createTime":"2023-12-23T01:24:59.357712Z","updateTime":"2023-12-23T01:24:59.357712Z"}]}
+[debug] [2023-12-23T01:47:17.490Z] Found ruleset: projects/personalportfolio-8904c/rulesets/b8f6727b-a3f9-458c-a945-2000f1cf42c1
+[debug] [2023-12-23T01:47:17.490Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/personalportfolio-8904c/rulesets/b8f6727b-a3f9-458c-a945-2000f1cf42c1 [none]
+[debug] [2023-12-23T01:47:17.705Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/personalportfolio-8904c/rulesets/b8f6727b-a3f9-458c-a945-2000f1cf42c1 200
+[debug] [2023-12-23T01:47:17.705Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/personalportfolio-8904c/rulesets/b8f6727b-a3f9-458c-a945-2000f1cf42c1 [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2023-12-23T01:47:20.491Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/personalportfolio-8904c/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2023-12-23T01:47:20.493Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/personalportfolio-8904c/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2023-12-23T01:47:20.846Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/personalportfolio-8904c/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2023-12-23T01:47:20.846Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/personalportfolio-8904c/databases/(default)/collectionGroups/-/indexes {}
+[debug] [2023-12-23T01:47:20.867Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/personalportfolio-8904c/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2023-12-23T01:47:20.867Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/personalportfolio-8904c/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/personalportfolio-8904c/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[info] 
+=== Functions Setup
+[debug] [2023-12-23T01:47:20.871Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-12-23T01:47:20.871Z] > authorizing via signed-in user (nhrobertson3@gmail.com)
+[debug] [2023-12-23T01:47:20.871Z] [iam] checking project personalportfolio-8904c for permissions ["firebase.projects.get"]
+[debug] [2023-12-23T01:47:20.871Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/personalportfolio-8904c:testIamPermissions [none]
+[debug] [2023-12-23T01:47:20.871Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/personalportfolio-8904c:testIamPermissions x-goog-quota-user=projects/personalportfolio-8904c
+[debug] [2023-12-23T01:47:20.871Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/personalportfolio-8904c:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-12-23T01:47:21.105Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/personalportfolio-8904c:testIamPermissions 200
+[debug] [2023-12-23T01:47:21.105Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/personalportfolio-8904c:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-12-23T01:47:21.105Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/personalportfolio-8904c/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-12-23T01:47:21.105Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/personalportfolio-8904c/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/personalportfolio-8904c
+[debug] [2023-12-23T01:47:21.106Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/personalportfolio-8904c/services/runtimeconfig.googleapis.com [none]
+[debug] [2023-12-23T01:47:21.106Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/personalportfolio-8904c/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/personalportfolio-8904c
+[debug] [2023-12-23T01:47:21.520Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/personalportfolio-8904c/services/runtimeconfig.googleapis.com 200
+[debug] [2023-12-23T01:47:21.520Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/personalportfolio-8904c/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2023-12-23T01:47:21.594Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/personalportfolio-8904c/services/cloudfunctions.googleapis.com 200
+[debug] [2023-12-23T01:47:21.595Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/personalportfolio-8904c/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2023-12-23T01:47:21.595Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/personalportfolio-8904c/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2023-12-23T01:47:21.595Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/personalportfolio-8904c/services/cloudfunctions.googleapis.com:enable x-goog-quota-user=projects/personalportfolio-8904c
+[debug] [2023-12-23T01:47:22.946Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/personalportfolio-8904c/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2023-12-23T01:47:22.946Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/personalportfolio-8904c/services/cloudfunctions.googleapis.com:enable [omitted]
+[debug] [2023-12-23T01:47:32.960Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/personalportfolio-8904c/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-12-23T01:47:32.960Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/personalportfolio-8904c/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/personalportfolio-8904c
+[debug] [2023-12-23T01:47:33.381Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/personalportfolio-8904c/services/cloudfunctions.googleapis.com 200
+[debug] [2023-12-23T01:47:33.381Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/personalportfolio-8904c/services/cloudfunctions.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/.eslintrc.js 
+[info] +  Wrote functions/index.js 
+[info] +  Wrote functions/.gitignore 

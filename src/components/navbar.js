@@ -4,14 +4,21 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import logo from '../logo.png'
+import { useHistory } from 'react-router-dom';
+import pdf from '../images/tempresume.pdf'
 
 
 class NavBar extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-        }
-    }
+    handleGitHubRedirect = () => {
+        const externalUrl = 'https://github.com/nhrobertson';
+        window.location.href = externalUrl;
+    };
+
+    openPdf = () => {
+        const pdfPath = pdf;
+    
+        window.open(pdfPath, '_blank');
+      };
 
     render() {
         return (
@@ -33,9 +40,9 @@ class NavBar extends Component {
                         <Nav.Link onClick={() => {this.props.switchPageTo("home")}}>Home</Nav.Link>
                         <Nav.Link onClick={() => {this.props.switchPageTo("projects")}}>Projects</Nav.Link>
                         <NavDropdown title="Other" id="basic-nav-dropdown">
-                            <NavDropdown.Item onClick={() => {this.props.switchPageTo("academics")}}>Academics</NavDropdown.Item>
-                            <NavDropdown.Item onClick={() => {this.props.switchPageTo("resume")}}>Resume</NavDropdown.Item>
-                            <NavDropdown.Item onClick={() => {this.props.switchPageTo("github")}}>GitHub</NavDropdown.Item>
+                            <NavDropdown.Item onClick={() => alert("Official transcript available after graduation in May 2024")}>Academics</NavDropdown.Item>
+                            <NavDropdown.Item onClick={() => this.openPdf()}>Resume</NavDropdown.Item>
+                            <NavDropdown.Item onClick={() => this.handleGitHubRedirect()}>GitHub</NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>
