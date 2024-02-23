@@ -26,9 +26,9 @@ class Games extends Component {
                 <Card.Body>
                     <Card.Title>Bale's Tale</Card.Title>
                     <Card.Text>
-                        Temp
+                        Simple 2D platformer developed in my Computer Game Development Course with the team Roarring Star Studios.
                     </Card.Text>
-                    <Button variant="primary" onClick={() => this.props.switchPageTo("home")}>Go</Button>
+                    <Button variant="primary" onClick={() => this.props.switchPageTo("project_template")}>Go</Button>
                 </Card.Body>
             </Card>
             </Col>
@@ -38,9 +38,21 @@ class Games extends Component {
                 <Card.Body>
                     <Card.Title>Crawfish Creek</Card.Title>
                     <Card.Text>
-                        Temp
+                    Simple 3D infinite scroller developed in my Computer Game Development Course with the team Roarring Star Studios.
                     </Card.Text>
-                    <Button variant="primary" onClick={() => this.props.switchPageTo("home")}>Go</Button>
+                    <Button variant="primary" onClick={() => this.props.switchPageTo("project_template")}>Go</Button>
+                </Card.Body>
+            </Card>
+            </Col>
+            <Col className="d-flex"> 
+            <Card className="text-center flex-fill" style={{width: '30%'}}>
+                <Card.Img variant="top" src={placeholder} />
+                <Card.Body>
+                    <Card.Title>TBA Title</Card.Title>
+                    <Card.Text>
+                        First personal project after Computer Game Development. Pursuing a full release on steam. Now managing Roarring Star Studios team.
+                    </Card.Text>
+                    <Button variant="primary" onClick={() => this.props.switchPageTo("project_template")}>Go</Button>
                 </Card.Body>
             </Card>
             </Col>

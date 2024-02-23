@@ -39,8 +39,9 @@ class NavBar extends Component {
                     <Nav className="me-auto">
                         <Nav.Link onClick={() => {this.props.switchPageTo("home")}}>Home</Nav.Link>
                         <Nav.Link onClick={() => {this.props.switchPageTo("projects")}}>Projects</Nav.Link>
-                        <NavDropdown title="Other" id="basic-nav-dropdown">
-                            <NavDropdown.Item onClick={() => alert("Official transcript available after graduation in May 2024")}>Academics</NavDropdown.Item>
+                        <Nav.Link onClick={() => {this.props.switchPageTo("about")}}>About Me</Nav.Link>
+                        <NavDropdown title="Links" id="basic-nav-dropdown">
+                            <NavDropdown.Item onClick={() => alert("Official transcript available after graduation in May 2024")}>Transcript</NavDropdown.Item>
                             <NavDropdown.Item onClick={() => this.openPdf()}>Resume</NavDropdown.Item>
                             <NavDropdown.Item onClick={() => this.handleGitHubRedirect()}>GitHub</NavDropdown.Item>
                         </NavDropdown>

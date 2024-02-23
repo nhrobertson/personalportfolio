@@ -9,6 +9,7 @@ import Games from './pages/games'
 import Contact from './pages/contact';
 import Thanks from './pages/thanks';
 import ProjectPageTemplate from './pages/project-page-template';
+import WelcomeTogether from './pages/welcome-together';
 import DetailedProjects from './pages/detailed_projects';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -42,6 +43,10 @@ class App extends React.Component {
         return (<Thanks switchPageTo={this.switchPageTo.bind(this)}/>)
       case "project_template":
         return (<ProjectPageTemplate switchPageTo={this.switchPageTo.bind(this)}/>)
+      case "welcome_together":
+        return (<WelcomeTogether switchPageTo={this.switchPageTo.bind(this)}/>)
+      case "about":
+        return;
     }
   }
 

@@ -6,6 +6,7 @@ import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import placeholder from '../images/placeholder-2.png'
+import wtlogo from '../images/wtlogo.png'
 
 class DetailedProjects extends Component {
     render() {
@@ -22,13 +23,13 @@ class DetailedProjects extends Component {
             <Row style={{padding: '5%', paddingTop: '2.5%', paddingBottom: '2.5%'}}>
             <Col className="d-flex"> 
             <Card className="text-center flex-fill" style={{width: '30%'}}>
-                <Card.Img variant="top" src={placeholder} />
+                <Card.Img variant="top" src={wtlogo} />
                 <Card.Body>
                     <Card.Title>Welcome Together</Card.Title>
                     <Card.Text>
-                        Temp
+                        A web-app designed to make creating and planning events easier. Currently a team member on the Welcome Together development team. Currently in development.
                     </Card.Text>
-                    <Button variant="primary" onClick={() => this.props.switchPageTo("project_template")}>Go</Button>
+                    <Button variant="primary" onClick={() => this.props.switchPageTo("welcome_together")}>Go</Button>
                 </Card.Body>
             </Card>
             </Col>
@@ -38,9 +39,9 @@ class DetailedProjects extends Component {
                 <Card.Body>
                     <Card.Title>This Website</Card.Title>
                     <Card.Text>
-                        Temp
+                        This is a simple React and React-Bootstrap webapp that details my portfolio.
                     </Card.Text>
-                    <Button variant="primary" onClick={() => this.props.switchPageTo("home")}>Go</Button>
+                    <Button variant="primary" onClick={() => this.props.switchPageTo("project_template")}>Go</Button>
                 </Card.Body>
             </Card>
             </Col>
@@ -48,11 +49,11 @@ class DetailedProjects extends Component {
             <Card className="text-center flex-fill" style={{width: '30%'}}>
                 <Card.Img variant="top" src={placeholder} />
                 <Card.Body>
-                    <Card.Title>Robotics</Card.Title>
+                    <Card.Title>Computer Engineering Projects</Card.Title>
                     <Card.Text>
-                        Temp
+                        This will detail many of the Computer Engineering projects that I have worked on using the FPGA board, quartus, and other hardware specific aspects.
                     </Card.Text>
-                    <Button variant="primary" onClick={() => this.props.switchPageTo("home")}>Go</Button>
+                    <Button variant="primary" onClick={() => this.props.switchPageTo("project_template")}>Go</Button>
                 </Card.Body>
             </Card>
             </Col>
@@ -62,11 +63,11 @@ class DetailedProjects extends Component {
             <Card className="text-center flex-fill" style={{width: '30%'}}>
                 <Card.Img variant="top" src={placeholder} />
                 <Card.Body>
-                    <Card.Title>C++ School Projects</Card.Title>
+                    <Card.Title>Algorithms</Card.Title>
                     <Card.Text>
-                        Temp
+                        Here will detail many of the algorithms that I have implemented over the years of pursuing a Computer Engineering Degree.
                     </Card.Text>
-                    <Button variant="primary" onClick={() => this.props.switchPageTo("home")}>Go</Button>
+                    <Button variant="primary" onClick={() => this.props.switchPageTo("project_template")}>Go</Button>
                 </Card.Body>
             </Card>
             </Col>
@@ -74,11 +75,11 @@ class DetailedProjects extends Component {
             <Card className="text-center flex-fill" style={{width: '30%'}}>
                 <Card.Img variant="top" src={placeholder} />
                 <Card.Body>
-                    <Card.Title>File Sorter (Unfinished)</Card.Title>
+                    <Card.Title>Finance Tracker</Card.Title>
                     <Card.Text>
-                        Temp
+                        A project using WPF and C# to create a functional financial tracker that will be used for locally keeping track of finances. Currently in development.
                     </Card.Text>
-                    <Button variant="primary" onClick={() => this.props.switchPageTo("home")}>Go</Button>
+                    <Button variant="primary" onClick={() => this.props.switchPageTo("project_template")}>Go</Button>
                 </Card.Body>
             </Card>
             </Col>
@@ -86,11 +87,11 @@ class DetailedProjects extends Component {
             <Card className="text-center flex-fill" style={{width: '30%'}}>
                 <Card.Img variant="top" src={placeholder} />
                 <Card.Body>
-                    <Card.Title>Go Lang Discovery</Card.Title>
+                    <Card.Title>Other Minor Projects</Card.Title>
                     <Card.Text>
-                        Temp
+                        Here will detail other minor projects that I have worked on such as incomplete personal projects and other school projects that are not related to Computer Science.
                     </Card.Text>
-                    <Button variant="primary" onClick={() => this.props.switchPageTo("home")}>Go</Button>
+                    <Button variant="primary" onClick={() => this.props.switchPageTo("project_template")}>Go</Button>
                 </Card.Body>
             </Card>
             </Col>

@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 import Container from 'react-bootstrap/Container';
 import Carousel from 'react-bootstrap/Carousel';
 import photo1 from '../images/photo1.jpg'
-import placeholder1 from '../images/Placeholder-1.png'
+import placeholder1 from '../images/CaraselImage.png'
+import researchpic from '../images/photo1.jpg'
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 class Home extends Component {
 
@@ -29,14 +32,39 @@ class Home extends Component {
                 <img src={placeholder1}/>
                 <Carousel.Caption>
                     <h4>Aspiring Engineer</h4>
-                    <p>On top of working with various programming techinques, I have also a lot of experience working with various embedded systems and robotics, implementing PID controllers and incorporating sensors.</p>
+                    <p>In addition to working with various programming techinques, I have extensive experience working with various embedded systems and robotics, implementing PID controllers and incorporating sensors.</p>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
         <div style={{padding: '2.5%'}}>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultricies tristique nulla aliquet enim tortor at. Risus nullam eget felis eget nunc lobortis mattis aliquam. Ut diam quam nulla porttitor massa id neque aliquam. Gravida cum sociis natoque penatibus et. Sem et tortor consequat id porta. Orci porta non pulvinar neque laoreet. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Quisque non tellus orci ac auctor augue. Faucibus a pellentesque sit amet porttitor. Elit pellentesque habitant morbi tristique. Est pellentesque elit ullamcorper dignissim cras tincidunt lobortis.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultricies tristique nulla aliquet enim tortor at. Risus nullam eget felis eget nunc lobortis mattis aliquam. Ut diam quam nulla porttitor massa id neque aliquam. Gravida cum sociis natoque penatibus et. Sem et tortor consequat id porta. Orci porta non pulvinar neque laoreet. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Quisque non tellus orci ac auctor augue. Faucibus a pellentesque sit amet porttitor. Elit pellentesque habitant morbi tristique. Est pellentesque elit ullamcorper dignissim cras tincidunt lobortis.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultricies tristique nulla aliquet enim tortor at. Risus nullam eget felis eget nunc lobortis mattis aliquam. Ut diam quam nulla porttitor massa id neque aliquam. Gravida cum sociis natoque penatibus et. Sem et tortor consequat id porta. Orci porta non pulvinar neque laoreet. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Quisque non tellus orci ac auctor augue. Faucibus a pellentesque sit amet porttitor. Elit pellentesque habitant morbi tristique. Est pellentesque elit ullamcorper dignissim cras tincidunt lobortis.</p>
+        <Row>
+            <Col xs lg="3">
+                <img src={researchpic} style={{width: '400px', borderRadius: '2%', paddingRight: '0'}}/>
+            </Col>
+            <Col style={{marginRight: '300px'}}>
+            <h3>Hello! My Name is Noah Robertson.</h3>
+            <p>
+                I am a current student at the University of South Carolina. I have almost completed a Computer Engineering Degree.
+                I have always found it important to constantly be working as since the age of 15 I have held several jobs
+                which have gained me a vast amount of workforce experience, helping me obtain skills in negotiation, communication, cooperation, and collaboration.
+            </p>
+            <p>
+                Currently, I have progressed in my field of study extensively and effectively. I have complete a multitude of courses that have
+                allowed me to further expand my knowledge base while helping me imploy these learned tactics and theories in the field of Computer Science.
+                I have worked extensively with a multitude of programming languages enabling me to be able to pick up programming languages very quickly.
+                Several courses required different languages which have now enabled me to be able to implement several applications in several languages.
+                As soon as my transcript is able to be released I will add it to this website detailing several courses and the completed requirements.
+            </p>
+            <p>
+                In the meantime, please feel free to checkout several of my projects that I have worked on in the past. This includes school projects aswell as personal projects.
+                It will also detail my research oppurtunity that I was able to complete with McNair Junior Fellows which is pictured to the left. You can find these multiude of projects
+                in the Projects section. If you are interested in learning even more about me please refer to the About Me page. I also have several links which will link you to my Resume and Personal GitHub account.
+            </p>
+            <p>
+                If you would like to contact me please feel free to use the Contact section!
+            </p>
+            </Col>
+        </Row>
         </div>
         </>
         );

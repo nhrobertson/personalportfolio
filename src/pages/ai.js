@@ -26,7 +26,7 @@ class AI extends Component {
                 <Card.Body>
                     <Card.Title>Research</Card.Title>
                     <Card.Text>
-                        Temp
+                        Over the summer of 2023, I researched into Finite State Machines and then Neural Networks. Come check out the process!
                     </Card.Text>
                     <Button variant="primary" onClick={() => this.props.switchPageTo("project_template")}>Go</Button>
                 </Card.Body>
@@ -38,7 +38,19 @@ class AI extends Component {
                 <Card.Body>
                     <Card.Title>Simple Digit Recognition Using Go</Card.Title>
                     <Card.Text>
-                        Temp
+                        This was the actual application developed during my research. It was a test of implementing a Neural Network using Go.
+                    </Card.Text>
+                    <Button variant="primary" onClick={() => this.props.switchPageTo("project_template")}>Go</Button>
+                </Card.Body>
+            </Card>
+            </Col>
+            <Col className="d-flex"> 
+            <Card className="text-center flex-fill" style={{width: '30%'}}>
+                <Card.Img variant="top" src={placeholder} />
+                <Card.Body>
+                    <Card.Title>Artificial Intelligence Course</Card.Title>
+                    <Card.Text>
+                        I am currently in a Artificial Intelligence course. Here you can see some of my implementations of pathfinding, minimax search, learning prolog, and other.
                     </Card.Text>
                     <Button variant="primary" onClick={() => this.props.switchPageTo("project_template")}>Go</Button>
                 </Card.Body>

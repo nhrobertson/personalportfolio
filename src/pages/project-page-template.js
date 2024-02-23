@@ -35,7 +35,7 @@ class ProjectPageTemplate extends Component {
                                 <Card.Title>Temp</Card.Title>
                                 <Card.Text>
                                     Temp
-                                </Card.Text>
+                                </Card.Text> 
                                 <Button variant="primary" onClick={this.handleRedirect}>Go</Button>
                             </Card.Body>
                         </Card>
