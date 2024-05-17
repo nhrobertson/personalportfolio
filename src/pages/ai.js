@@ -6,6 +6,9 @@ import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import placeholder from '../images/placeholder-2.png'
+import aiclassimg from '../images/aiclassimg.png'
+import personalresearchimg from '../images/personalresearchimg.png'
+import simplennimg from '../images/simplennimg.png'
 
 class AI extends Component {
     render() {
@@ -17,42 +20,43 @@ class AI extends Component {
                     <Card.Text>
                         Here you can checkout what I have personally done with AI over the past recent summer and get updates on my current progress in my Graduate Level Artificial Intelligence Course. 
                     </Card.Text>
+                    <Button variant='primary' onClick={() => this.props.switchPageTo("projects")}>Back</Button>
                 </Card.Body>
             </Card>
             <Row style={{padding: '5%', paddingTop: '2.5%'}}>
             <Col className="d-flex"> 
             <Card className="text-center flex-fill" style={{width: '30%'}}>
-                <Card.Img variant="top" src={placeholder} />
+                <Card.Img variant="top" src={personalresearchimg} />
                 <Card.Body>
                     <Card.Title>Research</Card.Title>
                     <Card.Text>
                         Over the summer of 2023, I researched into Finite State Machines and then Neural Networks. Come check out the process!
                     </Card.Text>
-                    <Button variant="primary" onClick={() => this.props.switchPageTo("project_template")}>Go</Button>
+                    <Button variant="primary" onClick={() => this.props.switchPageTo("research")}>Go</Button>
                 </Card.Body>
             </Card>
             </Col>
             <Col className="d-flex"> 
             <Card className="text-center flex-fill" style={{width: '30%'}}>
-                <Card.Img variant="top" src={placeholder} />
+                <Card.Img variant="top" src={simplennimg} />
                 <Card.Body>
                     <Card.Title>Simple Digit Recognition Using Go</Card.Title>
                     <Card.Text>
                         This was the actual application developed during my research. It was a test of implementing a Neural Network using Go.
                     </Card.Text>
-                    <Button variant="primary" onClick={() => this.props.switchPageTo("project_template")}>Go</Button>
+                    <Button variant="primary" onClick={() => this.props.switchPageTo("simplenn")}>Go</Button>
                 </Card.Body>
             </Card>
             </Col>
             <Col className="d-flex"> 
             <Card className="text-center flex-fill" style={{width: '30%'}}>
-                <Card.Img variant="top" src={placeholder} />
+                <Card.Img variant="top" src={aiclassimg} />
                 <Card.Body>
                     <Card.Title>Artificial Intelligence Course</Card.Title>
                     <Card.Text>
                         I am currently in a Artificial Intelligence course. Here you can see some of my implementations of pathfinding, minimax search, learning prolog, and other.
                     </Card.Text>
-                    <Button variant="primary" onClick={() => this.props.switchPageTo("project_template")}>Go</Button>
+                    <Button variant="primary" onClick={() => this.props.switchPageTo("aiclass")}>Go</Button>
                 </Card.Body>
             </Card>
             </Col>

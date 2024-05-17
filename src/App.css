@@ -84,3 +84,17 @@
   padding-top: 10%;
   padding: 5%;
 }
+
+.home-pic {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 2%;
+  padding-right: 0;
+}
+.about-pic {
+  width: 100%;
+  margin-top: 20%;
+  max-width: 100%;
+  border-radius: 2%;
+  padding-right: 0;
+}

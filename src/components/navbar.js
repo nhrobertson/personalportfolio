@@ -5,7 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import logo from '../logo.png'
 import { useHistory } from 'react-router-dom';
-import pdf from '../images/tempresume.pdf'
+import pdf from '../images/resume.pdf'
 
 
 class NavBar extends Component {
@@ -13,6 +13,11 @@ class NavBar extends Component {
         const externalUrl = 'https://github.com/nhrobertson';
         window.location.href = externalUrl;
     };
+
+    handleLinkedInRedirect = () => {
+        const externalUrl = 'https://www.linkedin.com/in/noah-robertson-330331211/'
+        window.location.hrek = externalUrl;
+    }
 
     openPdf = () => {
         const pdfPath = pdf;
@@ -41,9 +46,9 @@ class NavBar extends Component {
                         <Nav.Link onClick={() => {this.props.switchPageTo("projects")}}>Projects</Nav.Link>
                         <Nav.Link onClick={() => {this.props.switchPageTo("about")}}>About Me</Nav.Link>
                         <NavDropdown title="Links" id="basic-nav-dropdown">
-                            <NavDropdown.Item onClick={() => alert("Official transcript available after graduation in May 2024")}>Transcript</NavDropdown.Item>
                             <NavDropdown.Item onClick={() => this.openPdf()}>Resume</NavDropdown.Item>
                             <NavDropdown.Item onClick={() => this.handleGitHubRedirect()}>GitHub</NavDropdown.Item>
+                            <NavDropdown.Item onClick={() => this.handleLinkedInRedirect()}>LinkedIn</NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>

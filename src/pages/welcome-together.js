@@ -24,17 +24,18 @@ class WelcomeTogether extends Component {
                         <Col>
                         <div className="project-template-detail-wrapper">
                         <h3 style={{display: 'flex', alignItems: 'center', justifyContent: 'center', paddingBottom: '1%'}}>Welcome Together</h3>
-                        <p>I am currently working on my Capstone Senior Project. Here we are tasked with forming a team and developing a unique application. We started by coming up with the idea, researching into the technologies, then creating the Proof Of Concept. We are currently in full development of the Beta release. Here is the current project description:</p>
-                        <p>This website would be a place to connect with fellow students from your high school, elementary school, or even college. You all vote on a date and location for a reunion, maybe even post stuff. Perhaps even upload yearbooks.</p>
-                        <p>Functions: </p>
+                        <p>Welcome Together is an innovative event planning web application developed as a part of our Capstone Senior Project. Our team of five utilized React and Firebase to create a versatile platform designed to simplify event management and foster connections among users.</p>
+                        <p>Key Features:</p>
                         <ul>
-                            <li>Connect with fellow classmates (including contact information)</li>
-                            <li>Post "Where are you now" about what you are up to</li>
-                            <li>Vote on a date and location for a event</li>
-                            <li>Upload Photos</li>
-                            <li>Count down timer</li>
-                            <li>Attendees List</li>
+                            <li>Event Creation and Customization</li>
+                            <li>Interactive Polls</li>
+                            <li>Real-Time Chatroom</li>
+                            <li>Photo Sharing</li>
+                            <li>Countdown Timer</li>
                         </ul>
+                        <p><strong>Development Journey:</strong></p>
+                        <p>The development process began with ideation and thorough research into the most suitable technologies. We created a Proof of Concept before progressing to the full development of the Beta version. After rigorous testing and refinement, Welcome Together reached its v1.0 release, marking a significant milestone in our project.</p>
+                        
                         </div>
                         </Col>
                         <Col xs lg="3">
@@ -49,6 +50,7 @@ class WelcomeTogether extends Component {
                         </div>
                         </Col>
                     </Row>
+                    <Button variant='primary' onClick={() => this.props.switchPageTo("detailed_projects")}>Back</Button>
                 </Container>
             </>
         )

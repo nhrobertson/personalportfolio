@@ -11,7 +11,16 @@ import Thanks from './pages/thanks';
 import ProjectPageTemplate from './pages/project-page-template';
 import WelcomeTogether from './pages/welcome-together';
 import DetailedProjects from './pages/detailed_projects';
+import ThisWebsite from './pages/this-website';
+import PicCheck from './pages/piccheck';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Research from './pages/research';
+import SimpleNN from './pages/simplenn';
+import AIClass from './pages/aiclass';
+import BalesTale from './pages/balestale';
+import CrawfishCreek from './pages/crawfishcreek';
+import Waffle from './pages/waffle';
+import About from './pages/about';
 
 class App extends React.Component {
   constructor(props) {
@@ -45,8 +54,24 @@ class App extends React.Component {
         return (<ProjectPageTemplate switchPageTo={this.switchPageTo.bind(this)}/>)
       case "welcome_together":
         return (<WelcomeTogether switchPageTo={this.switchPageTo.bind(this)}/>)
+      case "this-website":
+        return (<ThisWebsite switchPageTo={this.switchPageTo.bind(this)}/>)
+      case "piccheck":
+        return (<PicCheck switchPageTo={this.switchPageTo.bind(this)}/>)
+      case "research":
+        return (<Research switchPageTo={this.switchPageTo.bind(this)}/>)
+      case "simplenn":
+        return (<SimpleNN switchPageTo={this.switchPageTo.bind(this)}/>)
+      case "aiclass":
+        return (<AIClass switchPageTo={this.switchPageTo.bind(this)}/>)
+      case "balestale":
+        return (<BalesTale switchPageTo={this.switchPageTo.bind(this)}/>)
+      case "crawfishcreek":
+        return (<CrawfishCreek switchPageTo={this.switchPageTo.bind(this)}/>)
+      case "waffle":
+        return (<Waffle switchPageTo={this.switchPageTo.bind(this)}/>)
       case "about":
-        return;
+        return (<About switchPageTo={this.switchPageTo.bind(this)}/>);
     }
   }
 

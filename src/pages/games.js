@@ -6,6 +6,9 @@ import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import placeholder from '../images/placeholder-2.png'
+import cc from '../images/cc.png'
+import bt from '../images/bt.png'
+import waffle from '../images/waffle.png'
 
 class Games extends Component {
     render() {
@@ -17,42 +20,43 @@ class Games extends Component {
                     <Card.Text>
                         Here you can check out the various games I have worked on - specifically using the Unity Game Engine with C# as a scripting language.
                     </Card.Text>
+                    <Button variant='primary' onClick={() => this.props.switchPageTo("projects")}>Back</Button>
                 </Card.Body>
             </Card>
             <Row style={{padding: '5%', paddingTop: '2.5%'}}>
             <Col className="d-flex"> 
             <Card className="text-center flex-fill" style={{width: '30%'}}>
-                <Card.Img variant="top" src={placeholder} />
+                <Card.Img variant="top" src={bt} />
                 <Card.Body>
                     <Card.Title>Bale's Tale</Card.Title>
                     <Card.Text>
                         Simple 2D platformer developed in my Computer Game Development Course with the team Roarring Star Studios.
                     </Card.Text>
-                    <Button variant="primary" onClick={() => this.props.switchPageTo("project_template")}>Go</Button>
+                    <Button variant="primary" onClick={() => this.props.switchPageTo("balestale")}>Go</Button>
                 </Card.Body>
             </Card>
             </Col>
             <Col className="d-flex"> 
             <Card className="text-center flex-fill" style={{width: '30%'}}>
-                <Card.Img variant="top" src={placeholder} />
+                <Card.Img variant="top" src={cc} />
                 <Card.Body>
                     <Card.Title>Crawfish Creek</Card.Title>
                     <Card.Text>
                     Simple 3D infinite scroller developed in my Computer Game Development Course with the team Roarring Star Studios.
                     </Card.Text>
-                    <Button variant="primary" onClick={() => this.props.switchPageTo("project_template")}>Go</Button>
+                    <Button variant="primary" onClick={() => this.props.switchPageTo("crawfishcreek")}>Go</Button>
                 </Card.Body>
             </Card>
             </Col>
             <Col className="d-flex"> 
             <Card className="text-center flex-fill" style={{width: '30%'}}>
-                <Card.Img variant="top" src={placeholder} />
+                <Card.Img variant="top" src={waffle} />
                 <Card.Body>
                     <Card.Title>TBA Title</Card.Title>
                     <Card.Text>
                         First personal project after Computer Game Development. Pursuing a full release on steam. Now managing Roarring Star Studios team.
                     </Card.Text>
-                    <Button variant="primary" onClick={() => this.props.switchPageTo("project_template")}>Go</Button>
+                    <Button variant="primary" onClick={() => this.props.switchPageTo("waffle")}>Go</Button>
                 </Card.Body>
             </Card>
             </Col>
